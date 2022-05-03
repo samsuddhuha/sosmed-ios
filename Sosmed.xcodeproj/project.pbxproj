@@ -7,15 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A1E095E51B821E5DFD667E3 /* Pods_Sosmed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 393F802D7CF1044B6B26ACD1 /* Pods_Sosmed.framework */; };
+		772B1CFA8011699D067361E9 /* Pods_SosmedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EF9D4FFFD91FA8BBEC2EF3 /* Pods_SosmedTests.framework */; };
+		7AFE6403BA114F2CE57D32EE /* Pods_Sosmed_SosmedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A52D0EADEDFA9C54BE836830 /* Pods_Sosmed_SosmedUITests.framework */; };
 		E1EF00C7281FF9050026A4FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF00C6281FF9050026A4FA /* AppDelegate.swift */; };
 		E1EF00C9281FF9050026A4FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF00C8281FF9050026A4FA /* SceneDelegate.swift */; };
-		E1EF00CB281FF9050026A4FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF00CA281FF9050026A4FA /* ViewController.swift */; };
-		E1EF00CE281FF9050026A4FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1EF00CC281FF9050026A4FA /* Main.storyboard */; };
+		E1EF00CB281FF9050026A4FA /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF00CA281FF9050026A4FA /* PostController.swift */; };
 		E1EF00D0281FF9060026A4FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1EF00CF281FF9060026A4FA /* Assets.xcassets */; };
 		E1EF00D3281FF9060026A4FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1EF00D1281FF9060026A4FA /* LaunchScreen.storyboard */; };
 		E1EF00DE281FF9060026A4FA /* SosmedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF00DD281FF9060026A4FA /* SosmedTests.swift */; };
 		E1EF00E8281FF9060026A4FA /* SosmedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF00E7281FF9060026A4FA /* SosmedUITests.swift */; };
 		E1EF00EA281FF9060026A4FA /* SosmedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF00E9281FF9060026A4FA /* SosmedUITestsLaunchTests.swift */; };
+		E1EF00FE281FFA6A0026A4FA /* ControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF00FD281FFA6A0026A4FA /* ControllerExtension.swift */; };
+		E1EF01012820EF4B0026A4FA /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF01002820EF4B0026A4FA /* HomeController.swift */; };
+		E1EF01032820EF650026A4FA /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1EF01022820EF650026A4FA /* Home.storyboard */; };
+		E1EF01052820F03F0026A4FA /* PostController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1EF01042820F03F0026A4FA /* PostController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +42,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0B4B49FDF5010C05ED7F8C3D /* Pods-Sosmed-SosmedUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sosmed-SosmedUITests.release.xcconfig"; path = "Target Support Files/Pods-Sosmed-SosmedUITests/Pods-Sosmed-SosmedUITests.release.xcconfig"; sourceTree = "<group>"; };
+		244BE852C0C0E7DE32A55C1D /* Pods-Sosmed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sosmed.debug.xcconfig"; path = "Target Support Files/Pods-Sosmed/Pods-Sosmed.debug.xcconfig"; sourceTree = "<group>"; };
+		393F802D7CF1044B6B26ACD1 /* Pods_Sosmed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sosmed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80A65DF9042AFD7B2E8A31D1 /* Pods-Sosmed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sosmed.release.xcconfig"; path = "Target Support Files/Pods-Sosmed/Pods-Sosmed.release.xcconfig"; sourceTree = "<group>"; };
+		A52D0EADEDFA9C54BE836830 /* Pods_Sosmed_SosmedUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Sosmed_SosmedUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7EF9D4FFFD91FA8BBEC2EF3 /* Pods_SosmedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SosmedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2D9AB83D49F34F54A9103D9 /* Pods-SosmedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SosmedTests.debug.xcconfig"; path = "Target Support Files/Pods-SosmedTests/Pods-SosmedTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C65EB33355D23C40445717D6 /* Pods-Sosmed-SosmedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sosmed-SosmedUITests.debug.xcconfig"; path = "Target Support Files/Pods-Sosmed-SosmedUITests/Pods-Sosmed-SosmedUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1EF00C3281FF9050026A4FA /* Sosmed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sosmed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EF00C6281FF9050026A4FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1EF00C8281FF9050026A4FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E1EF00CA281FF9050026A4FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E1EF00CD281FF9050026A4FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1EF00CA281FF9050026A4FA /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 		E1EF00CF281FF9060026A4FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1EF00D2281FF9060026A4FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1EF00D4281FF9060026A4FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +62,11 @@
 		E1EF00E3281FF9060026A4FA /* SosmedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SosmedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EF00E7281FF9060026A4FA /* SosmedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SosmedUITests.swift; sourceTree = "<group>"; };
 		E1EF00E9281FF9060026A4FA /* SosmedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SosmedUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1EF00FD281FFA6A0026A4FA /* ControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerExtension.swift; sourceTree = "<group>"; };
+		E1EF01002820EF4B0026A4FA /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		E1EF01022820EF650026A4FA /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		E1EF01042820F03F0026A4FA /* PostController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostController.xib; sourceTree = "<group>"; };
+		FB8359CFA062CBE026ED7545 /* Pods-SosmedTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SosmedTests.release.xcconfig"; path = "Target Support Files/Pods-SosmedTests/Pods-SosmedTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1E095E51B821E5DFD667E3 /* Pods_Sosmed.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				772B1CFA8011699D067361E9 /* Pods_SosmedTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +90,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AFE6403BA114F2CE57D32EE /* Pods_Sosmed_SosmedUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A7297849C3A8993E4E889F6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				393F802D7CF1044B6B26ACD1 /* Pods_Sosmed.framework */,
+				A52D0EADEDFA9C54BE836830 /* Pods_Sosmed_SosmedUITests.framework */,
+				A7EF9D4FFFD91FA8BBEC2EF3 /* Pods_SosmedTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7F53ED114A93F638C3B32A4B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				244BE852C0C0E7DE32A55C1D /* Pods-Sosmed.debug.xcconfig */,
+				80A65DF9042AFD7B2E8A31D1 /* Pods-Sosmed.release.xcconfig */,
+				C65EB33355D23C40445717D6 /* Pods-Sosmed-SosmedUITests.debug.xcconfig */,
+				0B4B49FDF5010C05ED7F8C3D /* Pods-Sosmed-SosmedUITests.release.xcconfig */,
+				C2D9AB83D49F34F54A9103D9 /* Pods-SosmedTests.debug.xcconfig */,
+				FB8359CFA062CBE026ED7545 /* Pods-SosmedTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E1EF00BA281FF9050026A4FA = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +127,8 @@
 				E1EF00DC281FF9060026A4FA /* SosmedTests */,
 				E1EF00E6281FF9060026A4FA /* SosmedUITests */,
 				E1EF00C4281FF9050026A4FA /* Products */,
+				7F53ED114A93F638C3B32A4B /* Pods */,
+				0A7297849C3A8993E4E889F6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,12 +145,12 @@
 		E1EF00C5281FF9050026A4FA /* Sosmed */ = {
 			isa = PBXGroup;
 			children = (
+				E1EF00F6281FF9860026A4FA /* Feature */,
+				E1EF00F8281FF9AB0026A4FA /* Service */,
+				E1EF00F9281FF9B50026A4FA /* Support */,
 				E1EF00C6281FF9050026A4FA /* AppDelegate.swift */,
 				E1EF00C8281FF9050026A4FA /* SceneDelegate.swift */,
-				E1EF00CA281FF9050026A4FA /* ViewController.swift */,
-				E1EF00CC281FF9050026A4FA /* Main.storyboard */,
 				E1EF00CF281FF9060026A4FA /* Assets.xcassets */,
-				E1EF00D1281FF9060026A4FA /* LaunchScreen.storyboard */,
 				E1EF00D4281FF9060026A4FA /* Info.plist */,
 			);
 			path = Sosmed;
@@ -127,6 +173,73 @@
 			path = SosmedUITests;
 			sourceTree = "<group>";
 		};
+		E1EF00F6281FF9860026A4FA /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				E1EF01062820F0EA0026A4FA /* LaunchScreen */,
+				E1EF00FF2820EF1F0026A4FA /* Home */,
+				E1EF00FB281FF9DD0026A4FA /* Post */,
+				E1EF00FA281FF9D40026A4FA /* User */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		E1EF00F8281FF9AB0026A4FA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E1EF00F9281FF9B50026A4FA /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				E1EF00FC281FFA3C0026A4FA /* Extension */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		E1EF00FA281FF9D40026A4FA /* User */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		E1EF00FB281FF9DD0026A4FA /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				E1EF00CA281FF9050026A4FA /* PostController.swift */,
+				E1EF01042820F03F0026A4FA /* PostController.xib */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		E1EF00FC281FFA3C0026A4FA /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E1EF00FD281FFA6A0026A4FA /* ControllerExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E1EF00FF2820EF1F0026A4FA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E1EF01002820EF4B0026A4FA /* HomeController.swift */,
+				E1EF01022820EF650026A4FA /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E1EF01062820F0EA0026A4FA /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E1EF00D1281FF9060026A4FA /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +247,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1EF00ED281FF9060026A4FA /* Build configuration list for PBXNativeTarget "Sosmed" */;
 			buildPhases = (
+				75242E8B0553BD6FE54F6A8D /* [CP] Check Pods Manifest.lock */,
 				E1EF00BF281FF9050026A4FA /* Sources */,
 				E1EF00C0281FF9050026A4FA /* Frameworks */,
 				E1EF00C1281FF9050026A4FA /* Resources */,
+				7E44FD5E2D0E75F71FD04CBD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1EF00F0281FF9060026A4FA /* Build configuration list for PBXNativeTarget "SosmedTests" */;
 			buildPhases = (
+				26D9052DA83BC68D14C9F4CF /* [CP] Check Pods Manifest.lock */,
 				E1EF00D5281FF9060026A4FA /* Sources */,
 				E1EF00D6281FF9060026A4FA /* Frameworks */,
 				E1EF00D7281FF9060026A4FA /* Resources */,
@@ -169,9 +285,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1EF00F3281FF9060026A4FA /* Build configuration list for PBXNativeTarget "SosmedUITests" */;
 			buildPhases = (
+				9C74C93D6CAA08FAB49CA32C /* [CP] Check Pods Manifest.lock */,
 				E1EF00DF281FF9060026A4FA /* Sources */,
 				E1EF00E0281FF9060026A4FA /* Frameworks */,
 				E1EF00E1281FF9060026A4FA /* Resources */,
+				216CFCF3C575FAA35F6012E4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -232,8 +350,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1EF00D3281FF9060026A4FA /* LaunchScreen.storyboard in Resources */,
+				E1EF01052820F03F0026A4FA /* PostController.xib in Resources */,
 				E1EF00D0281FF9060026A4FA /* Assets.xcassets in Resources */,
-				E1EF00CE281FF9050026A4FA /* Main.storyboard in Resources */,
+				E1EF01032820EF650026A4FA /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +372,119 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		216CFCF3C575FAA35F6012E4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sosmed-SosmedUITests/Pods-Sosmed-SosmedUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sosmed-SosmedUITests/Pods-Sosmed-SosmedUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sosmed-SosmedUITests/Pods-Sosmed-SosmedUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		26D9052DA83BC68D14C9F4CF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SosmedTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		75242E8B0553BD6FE54F6A8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sosmed-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E44FD5E2D0E75F71FD04CBD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sosmed/Pods-Sosmed-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Sosmed/Pods-Sosmed-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Sosmed/Pods-Sosmed-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9C74C93D6CAA08FAB49CA32C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Sosmed-SosmedUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E1EF00BF281FF9050026A4FA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E1EF00CB281FF9050026A4FA /* ViewController.swift in Sources */,
+				E1EF00CB281FF9050026A4FA /* PostController.swift in Sources */,
+				E1EF00FE281FFA6A0026A4FA /* ControllerExtension.swift in Sources */,
 				E1EF00C7281FF9050026A4FA /* AppDelegate.swift in Sources */,
 				E1EF00C9281FF9050026A4FA /* SceneDelegate.swift in Sources */,
+				E1EF01012820EF4B0026A4FA /* HomeController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +521,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E1EF00CC281FF9050026A4FA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E1EF00CD281FF9050026A4FA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E1EF00D1281FF9060026A4FA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -434,6 +650,7 @@
 		};
 		E1EF00EE281FF9060026A4FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244BE852C0C0E7DE32A55C1D /* Pods-Sosmed.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,7 +660,8 @@
 				INFOPLIST_FILE = Sosmed/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -461,6 +679,7 @@
 		};
 		E1EF00EF281FF9060026A4FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80A65DF9042AFD7B2E8A31D1 /* Pods-Sosmed.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -470,7 +689,8 @@
 				INFOPLIST_FILE = Sosmed/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Home;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -488,6 +708,7 @@
 		};
 		E1EF00F1281FF9060026A4FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D9AB83D49F34F54A9103D9 /* Pods-SosmedTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -507,6 +728,7 @@
 		};
 		E1EF00F2281FF9060026A4FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB8359CFA062CBE026ED7545 /* Pods-SosmedTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -526,6 +748,7 @@
 		};
 		E1EF00F4281FF9060026A4FA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C65EB33355D23C40445717D6 /* Pods-Sosmed-SosmedUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -543,6 +766,7 @@
 		};
 		E1EF00F5281FF9060026A4FA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B4B49FDF5010C05ED7F8C3D /* Pods-Sosmed-SosmedUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
