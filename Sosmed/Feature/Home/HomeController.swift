@@ -13,11 +13,20 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backButtonDisplayMode = .minimal
+        title = "Home"
+        setupView()
+    }
+    
+    private func setupView(){
+        
     }
     
     
     @IBAction func btnTes(_ sender: Any) {
-        
+        let viewController = PostController()
+        viewController.titleToolbar = "Tess"
+        navigationController?.pushViewController(viewController, animated: true)
     }
     
 }

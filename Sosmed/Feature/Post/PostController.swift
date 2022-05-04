@@ -8,10 +8,13 @@
 import UIKit
 
 class PostController: UIViewController {
+    
+    var titleToolbar = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        title = titleToolbar
     }
 
 
