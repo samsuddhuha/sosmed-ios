@@ -45,9 +45,9 @@ class HomeController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
         
-        viewModel.successGetPost = { dataPost in
+        viewModel.successGetPost = { dataPosts in
             self.listPost.removeAll()
-            self.listPost = dataPost
+            self.listPost = dataPosts
             self.tablePost.reloadData()
         }
     }

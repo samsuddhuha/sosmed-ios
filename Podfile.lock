@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.6.1)
+  - ImageViewer.swift (3.3.7)
   - IQKeyboardManagerSwift (6.5.10)
   - Moya (14.0.0):
     - Moya/Core (= 14.0.0)
@@ -11,6 +12,7 @@ PODS:
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
+  - ImageViewer.swift (~> 3.0)
   - IQKeyboardManagerSwift
   - Moya (~> 14.0)
   - NVActivityIndicatorView (~> 4.4)
@@ -19,6 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - ImageViewer.swift
     - IQKeyboardManagerSwift
     - Moya
     - NVActivityIndicatorView
@@ -26,11 +29,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  ImageViewer.swift: 2acc01513bc39f9d7c1ee51042055755971ad9da
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
   Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 0236d27bd133bec13e653cdcbce9a4c07f433ec3
+PODFILE CHECKSUM: 7988a8dbcf8f42896e6cd477ef9710073facc7e5
 
 COCOAPODS: 1.11.2

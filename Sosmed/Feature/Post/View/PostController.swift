@@ -35,7 +35,6 @@ class PostController: UIViewController {
         labelBody.text = post.body
         labelTitle.text = post.title
         
-        tableComment.delegate = self
         tableComment.dataSource = self
         tableComment.register(UINib(nibName: "CommentCell", bundle: nil), forCellReuseIdentifier: "CommentCell")
     }
@@ -51,9 +50,9 @@ class PostController: UIViewController {
         
         showLoadingView(state: true)
         postViewModel.getCommentPost(id: post.id)
-        postViewModel.successGetComment = { dataComment in
+        postViewModel.successGetComment = { dataComments in
             self.listComment.removeAll()
-            self.listComment = dataComment
+            self.listComment = dataComments
             self.labelComment.text = "\(self.listComment.count) Comments"
             self.tableComment.reloadData()
         }
@@ -69,12 +68,14 @@ class PostController: UIViewController {
     }
     
     @IBAction func toUserDetail(_ sender: Any) {
-        
+        let viewController = UserDetailController()
+        viewController.userId = post.userId
+        navigationController?.pushViewController(viewController, animated: true)
     }
 
 }
 
-extension PostController: UITableViewDelegate, UITableViewDataSource{
+extension PostController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return listComment.count
     }
@@ -85,11 +86,6 @@ extension PostController: UITableViewDelegate, UITableViewDataSource{
         cell.setupViewCell(dataComment: dataComment)
     
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let dataComment = listComment[indexPath.row]
-        
     }
 }
 

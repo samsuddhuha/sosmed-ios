@@ -11,6 +11,7 @@ struct User: Decodable {
     let id: Int
     let name, username, email: String
     let company: Company
+    let address: Address
 
     enum CodingKeys: String, CodingKey {
         case id = "id"
@@ -18,6 +19,7 @@ struct User: Decodable {
         case username = "username"
         case email = "email"
         case company = "company"
+        case address = "address"
     }
 }
 
@@ -28,5 +30,16 @@ struct Company: Decodable {
         case name = "name"
         case catchPhrase = "catchPhrase"
         case bs = "bs"
+    }
+}
+
+struct Address: Decodable {
+    let street, city, suite, zipcode: String
+
+    enum CodingKeys: String, CodingKey {
+        case street = "street"
+        case city = "city"
+        case suite = "suite"
+        case zipcode = "zipcode"
     }
 }

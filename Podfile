@@ -10,6 +10,7 @@ target 'Sosmed' do
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftyJSON'
   pod 'Moya', '~> 14.0'
+  pod 'ImageViewer.swift', '~> 3.0'
 
   target 'SosmedTests' do
     inherit! :search_paths

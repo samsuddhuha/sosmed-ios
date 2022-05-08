@@ -13,13 +13,15 @@ enum Common: Equatable {
     case listPost
     case commentPost(id: Int)
     case userDetail(id: Int)
+    case userAlbums(id: Int)
+    case albumPhotos(id: Int)
 }
 
 let commonClosure = { (target: Common) -> Endpoint in
     let defaultEndpoint = MoyaProvider.defaultEndpointMapping(for: target)
     
     switch target {
-    case .listPost, .commentPost, .userDetail:
+    case .listPost, .commentPost, .userDetail, .userAlbums, .albumPhotos:
         return defaultEndpoint
     }
 }
@@ -39,12 +41,16 @@ extension Common: TargetType {
             return "/posts/\(id)/comments"
         case .userDetail(let id):
             return "/users/\(id)"
+        case .userAlbums(let id):
+            return "/users/\(id)/albums"
+        case .albumPhotos(let id):
+            return "/albums/\(id)/photos"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .listPost, .commentPost, .userDetail:
+        case .listPost, .commentPost, .userDetail, .userAlbums, .albumPhotos:
             return .get
         }
     }
@@ -57,7 +63,7 @@ extension Common: TargetType {
         var data = [String:Any]()
         
         switch self {
-        case .listPost, .commentPost , .userDetail:
+        case .listPost, .commentPost , .userDetail, .userAlbums, .albumPhotos:
             return .requestParameters(parameters: data, encoding: URLEncoding.queryString)
         }
     }

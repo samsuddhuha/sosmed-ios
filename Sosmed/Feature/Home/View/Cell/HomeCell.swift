@@ -34,7 +34,6 @@ class HomeCell: UITableViewCell {
     
     func setupViewCell(dataPost: Post) {
         labelTitle.text = dataPost.title
-//        cell.imageOwner.downloaded(from: data.owner?.avatarUrl ?? "")
         labelBody.text = dataPost.body
         viewModel.getUserDetail(id: dataPost.userId)
     }
