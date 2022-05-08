@@ -11,9 +11,11 @@ import UIKit
 class HomeController: UIViewController {
     
     @IBOutlet weak var tablePost: UITableView!
+    @IBOutlet weak var viewEmpty: UIView!
     
     private var viewModel : HomeViewModel!
     
+    let refresh = UIRefreshControl()
     var listPost = [Post]()
     
     override func viewDidLoad() {
@@ -28,6 +30,11 @@ class HomeController: UIViewController {
         tablePost.delegate = self
         tablePost.dataSource = self
         tablePost.register(UINib(nibName: "HomeCell", bundle: nil), forCellReuseIdentifier: "HomeCell")
+        
+        refresh.tintColor = UIColor.lightGray
+        refresh.transform = CGAffineTransform(scaleX: 1, y: 1)
+        tablePost.addSubview(refresh)
+        refresh.addTarget(self, action: #selector(refreshData), for: .valueChanged)
     }
     
     private func setupViewModel() {
@@ -43,13 +50,25 @@ class HomeController: UIViewController {
             let alert = UIAlertController(title: "Oops! Something went wrong.", message: error, preferredStyle:UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "Close", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
+            self.viewEmpty.isHidden = false
+            self.refresh.endRefreshing()
         }
         
         viewModel.successGetPost = { dataPosts in
             self.listPost.removeAll()
             self.listPost = dataPosts
             self.tablePost.reloadData()
+            self.viewEmpty.isHidden = true
+            self.refresh.endRefreshing()
         }
+    }
+    
+    @IBAction func btnReloadPage(_ sender: Any) {
+        viewModel.getListPost()
+    }
+    
+    @objc func refreshData(){
+        viewModel.getListPost()
     }
 }
 
