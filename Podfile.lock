@@ -1,5 +1,10 @@
 PODS:
-  - IQKeyboardManagerSwift (6.5.9)
+  - Alamofire (5.6.1)
+  - IQKeyboardManagerSwift (6.5.10)
+  - Moya (14.0.0):
+    - Moya/Core (= 14.0.0)
+  - Moya/Core (14.0.0):
+    - Alamofire (~> 5.0)
   - NVActivityIndicatorView (4.8.0):
     - NVActivityIndicatorView/Presenter (= 4.8.0)
   - NVActivityIndicatorView/Presenter (4.8.0)
@@ -7,20 +12,25 @@ PODS:
 
 DEPENDENCIES:
   - IQKeyboardManagerSwift
+  - Moya (~> 14.0)
   - NVActivityIndicatorView (~> 4.4)
   - SwiftyJSON
 
 SPEC REPOS:
   trunk:
+    - Alamofire
     - IQKeyboardManagerSwift
+    - Moya
     - NVActivityIndicatorView
     - SwiftyJSON
 
 SPEC CHECKSUMS:
-  IQKeyboardManagerSwift: 6e839c575c4aa1078d58a596e41244e77abe918f
+  Alamofire: 87bd8c952f9a4454320fce00d9cc3de57bcadaf5
+  IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  Moya: 5b45dacb75adb009f97fde91c204c1e565d31916
   NVActivityIndicatorView: d24b7ebcf80af5dcd994adb650e2b6c93379270f
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: cd4d009783450b2a5c0f601dd547ef43b37b1f7d
+PODFILE CHECKSUM: 0236d27bd133bec13e653cdcbce9a4c07f433ec3
 
 COCOAPODS: 1.11.2

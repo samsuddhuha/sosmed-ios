@@ -10,6 +10,14 @@
 		0A1E095E51B821E5DFD667E3 /* Pods_Sosmed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 393F802D7CF1044B6B26ACD1 /* Pods_Sosmed.framework */; };
 		772B1CFA8011699D067361E9 /* Pods_SosmedTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7EF9D4FFFD91FA8BBEC2EF3 /* Pods_SosmedTests.framework */; };
 		7AFE6403BA114F2CE57D32EE /* Pods_Sosmed_SosmedUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A52D0EADEDFA9C54BE836830 /* Pods_Sosmed_SosmedUITests.framework */; };
+		E12C1416282760DB00D0BAA2 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E12C1415282760DB00D0BAA2 /* HomeCell.xib */; };
+		E12C1418282760E500D0BAA2 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C1417282760E500D0BAA2 /* HomeCell.swift */; };
+		E12C141B282771CE00D0BAA2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C141A282771CE00D0BAA2 /* UserModel.swift */; };
+		E12C141E282771FE00D0BAA2 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C141D282771FE00D0BAA2 /* UserViewModel.swift */; };
+		E19FD5242825127300A4178A /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FD5232825127300A4178A /* Service.swift */; };
+		E19FD5262825152700A4178A /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FD5252825152700A4178A /* PostModel.swift */; };
+		E19FD528282529AD00A4178A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FD527282529AD00A4178A /* HomeViewModel.swift */; };
+		E19FD52B28255F0A00A4178A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FD52A28255F0A00A4178A /* Constant.swift */; };
 		E1EF00C7281FF9050026A4FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF00C6281FF9050026A4FA /* AppDelegate.swift */; };
 		E1EF00C9281FF9050026A4FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF00C8281FF9050026A4FA /* SceneDelegate.swift */; };
 		E1EF00CB281FF9050026A4FA /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EF00CA281FF9050026A4FA /* PostController.swift */; };
@@ -50,6 +58,14 @@
 		A7EF9D4FFFD91FA8BBEC2EF3 /* Pods_SosmedTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SosmedTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2D9AB83D49F34F54A9103D9 /* Pods-SosmedTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SosmedTests.debug.xcconfig"; path = "Target Support Files/Pods-SosmedTests/Pods-SosmedTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C65EB33355D23C40445717D6 /* Pods-Sosmed-SosmedUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sosmed-SosmedUITests.debug.xcconfig"; path = "Target Support Files/Pods-Sosmed-SosmedUITests/Pods-Sosmed-SosmedUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E12C1415282760DB00D0BAA2 /* HomeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		E12C1417282760E500D0BAA2 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		E12C141A282771CE00D0BAA2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		E12C141D282771FE00D0BAA2 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		E19FD5232825127300A4178A /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		E19FD5252825152700A4178A /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
+		E19FD527282529AD00A4178A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		E19FD52A28255F0A00A4178A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		E1EF00C3281FF9050026A4FA /* Sosmed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sosmed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1EF00C6281FF9050026A4FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1EF00C8281FF9050026A4FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +136,65 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		E12C1414282760C500D0BAA2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E12C1417282760E500D0BAA2 /* HomeCell.swift */,
+				E12C1415282760DB00D0BAA2 /* HomeCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E12C1419282771C100D0BAA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E12C141A282771CE00D0BAA2 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E12C141C282771E400D0BAA2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E12C141D282771FE00D0BAA2 /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E19FD5202825122C00A4178A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E19FD527282529AD00A4178A /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E19FD5212825125200A4178A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E12C1414282760C500D0BAA2 /* Cell */,
+				E1EF01002820EF4B0026A4FA /* HomeController.swift */,
+				E1EF01022820EF650026A4FA /* Home.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E19FD5222825125800A4178A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E19FD5252825152700A4178A /* PostModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E19FD52928255EFA00A4178A /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				E19FD52A28255F0A00A4178A /* Constant.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
 		E1EF00BA281FF9050026A4FA = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +262,7 @@
 		E1EF00F8281FF9AB0026A4FA /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				E19FD5232825127300A4178A /* Service.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -194,6 +270,7 @@
 		E1EF00F9281FF9B50026A4FA /* Support */ = {
 			isa = PBXGroup;
 			children = (
+				E19FD52928255EFA00A4178A /* Constant */,
 				E1EF00FC281FFA3C0026A4FA /* Extension */,
 			);
 			path = Support;
@@ -202,6 +279,8 @@
 		E1EF00FA281FF9D40026A4FA /* User */ = {
 			isa = PBXGroup;
 			children = (
+				E12C1419282771C100D0BAA2 /* Model */,
+				E12C141C282771E400D0BAA2 /* ViewModel */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -209,6 +288,7 @@
 		E1EF00FB281FF9DD0026A4FA /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				E19FD5222825125800A4178A /* Model */,
 				E1EF00CA281FF9050026A4FA /* PostController.swift */,
 				E1EF01042820F03F0026A4FA /* PostController.xib */,
 			);
@@ -226,8 +306,8 @@
 		E1EF00FF2820EF1F0026A4FA /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				E1EF01002820EF4B0026A4FA /* HomeController.swift */,
-				E1EF01022820EF650026A4FA /* Home.storyboard */,
+				E19FD5212825125200A4178A /* View */,
+				E19FD5202825122C00A4178A /* ViewModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -353,6 +433,7 @@
 				E1EF01052820F03F0026A4FA /* PostController.xib in Resources */,
 				E1EF00D0281FF9060026A4FA /* Assets.xcassets in Resources */,
 				E1EF01032820EF650026A4FA /* Home.storyboard in Resources */,
+				E12C1416282760DB00D0BAA2 /* HomeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,10 +562,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E1EF00CB281FF9050026A4FA /* PostController.swift in Sources */,
+				E12C141E282771FE00D0BAA2 /* UserViewModel.swift in Sources */,
 				E1EF00FE281FFA6A0026A4FA /* ControllerExtension.swift in Sources */,
+				E19FD52B28255F0A00A4178A /* Constant.swift in Sources */,
 				E1EF00C7281FF9050026A4FA /* AppDelegate.swift in Sources */,
+				E12C1418282760E500D0BAA2 /* HomeCell.swift in Sources */,
+				E19FD528282529AD00A4178A /* HomeViewModel.swift in Sources */,
+				E19FD5262825152700A4178A /* PostModel.swift in Sources */,
 				E1EF00C9281FF9050026A4FA /* SceneDelegate.swift in Sources */,
 				E1EF01012820EF4B0026A4FA /* HomeController.swift in Sources */,
+				E19FD5242825127300A4178A /* Service.swift in Sources */,
+				E12C141B282771CE00D0BAA2 /* UserModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

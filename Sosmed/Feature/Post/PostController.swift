@@ -9,12 +9,13 @@ import UIKit
 
 class PostController: UIViewController {
     
-    var titleToolbar = ""
+    var post: Post!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        title = titleToolbar
+        title = "Post Detail"
+        print("Tess \(post.title)")
     }
 
 

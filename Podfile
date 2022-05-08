@@ -9,6 +9,7 @@ target 'Sosmed' do
   pod 'NVActivityIndicatorView', '~> 4.4'
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftyJSON'
+  pod 'Moya', '~> 14.0'
 
   target 'SosmedTests' do
     inherit! :search_paths
