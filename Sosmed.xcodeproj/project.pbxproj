@@ -14,6 +14,10 @@
 		E12C1418282760E500D0BAA2 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C1417282760E500D0BAA2 /* HomeCell.swift */; };
 		E12C141B282771CE00D0BAA2 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C141A282771CE00D0BAA2 /* UserModel.swift */; };
 		E12C141E282771FE00D0BAA2 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C141D282771FE00D0BAA2 /* UserViewModel.swift */; };
+		E12C14232827DC2800D0BAA2 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C14222827DC2800D0BAA2 /* PostViewModel.swift */; };
+		E12C14252827DC5A00D0BAA2 /* CommentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C14242827DC5A00D0BAA2 /* CommentModel.swift */; };
+		E12C14272827DE9100D0BAA2 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12C14262827DE9100D0BAA2 /* CommentCell.swift */; };
+		E12C14292827DE9C00D0BAA2 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E12C14282827DE9C00D0BAA2 /* CommentCell.xib */; };
 		E19FD5242825127300A4178A /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FD5232825127300A4178A /* Service.swift */; };
 		E19FD5262825152700A4178A /* PostModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FD5252825152700A4178A /* PostModel.swift */; };
 		E19FD528282529AD00A4178A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19FD527282529AD00A4178A /* HomeViewModel.swift */; };
@@ -62,6 +66,10 @@
 		E12C1417282760E500D0BAA2 /* HomeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
 		E12C141A282771CE00D0BAA2 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		E12C141D282771FE00D0BAA2 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		E12C14222827DC2800D0BAA2 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		E12C14242827DC5A00D0BAA2 /* CommentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentModel.swift; sourceTree = "<group>"; };
+		E12C14262827DE9100D0BAA2 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		E12C14282827DE9C00D0BAA2 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		E19FD5232825127300A4178A /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		E19FD5252825152700A4178A /* PostModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostModel.swift; sourceTree = "<group>"; };
 		E19FD527282529AD00A4178A /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
@@ -161,6 +169,33 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		E12C141F28277CF000D0BAA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E12C142128277D3C00D0BAA2 /* Cell */,
+				E1EF00CA281FF9050026A4FA /* PostController.swift */,
+				E1EF01042820F03F0026A4FA /* PostController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E12C142028277CF800D0BAA2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E12C14222827DC2800D0BAA2 /* PostViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E12C142128277D3C00D0BAA2 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E12C14262827DE9100D0BAA2 /* CommentCell.swift */,
+				E12C14282827DE9C00D0BAA2 /* CommentCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		E19FD5202825122C00A4178A /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				E19FD5252825152700A4178A /* PostModel.swift */,
+				E12C14242827DC5A00D0BAA2 /* CommentModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -289,8 +325,8 @@
 			isa = PBXGroup;
 			children = (
 				E19FD5222825125800A4178A /* Model */,
-				E1EF00CA281FF9050026A4FA /* PostController.swift */,
-				E1EF01042820F03F0026A4FA /* PostController.xib */,
+				E12C141F28277CF000D0BAA2 /* View */,
+				E12C142028277CF800D0BAA2 /* ViewModel */,
 			);
 			path = Post;
 			sourceTree = "<group>";
@@ -432,6 +468,7 @@
 				E1EF00D3281FF9060026A4FA /* LaunchScreen.storyboard in Resources */,
 				E1EF01052820F03F0026A4FA /* PostController.xib in Resources */,
 				E1EF00D0281FF9060026A4FA /* Assets.xcassets in Resources */,
+				E12C14292827DE9C00D0BAA2 /* CommentCell.xib in Resources */,
 				E1EF01032820EF650026A4FA /* Home.storyboard in Resources */,
 				E12C1416282760DB00D0BAA2 /* HomeCell.xib in Resources */,
 			);
@@ -561,16 +598,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12C14232827DC2800D0BAA2 /* PostViewModel.swift in Sources */,
 				E1EF00CB281FF9050026A4FA /* PostController.swift in Sources */,
 				E12C141E282771FE00D0BAA2 /* UserViewModel.swift in Sources */,
 				E1EF00FE281FFA6A0026A4FA /* ControllerExtension.swift in Sources */,
 				E19FD52B28255F0A00A4178A /* Constant.swift in Sources */,
+				E12C14272827DE9100D0BAA2 /* CommentCell.swift in Sources */,
 				E1EF00C7281FF9050026A4FA /* AppDelegate.swift in Sources */,
 				E12C1418282760E500D0BAA2 /* HomeCell.swift in Sources */,
 				E19FD528282529AD00A4178A /* HomeViewModel.swift in Sources */,
 				E19FD5262825152700A4178A /* PostModel.swift in Sources */,
 				E1EF00C9281FF9050026A4FA /* SceneDelegate.swift in Sources */,
 				E1EF01012820EF4B0026A4FA /* HomeController.swift in Sources */,
+				E12C14252827DC5A00D0BAA2 /* CommentModel.swift in Sources */,
 				E19FD5242825127300A4178A /* Service.swift in Sources */,
 				E12C141B282771CE00D0BAA2 /* UserModel.swift in Sources */,
 			);

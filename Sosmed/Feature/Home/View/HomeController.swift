@@ -18,7 +18,7 @@ class HomeController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.backButtonDisplayMode = .minimal
+//        navigationItem.backButtonDisplayMode = .minimal
         title = "Home"
         setupView()
         setupViewModel()
@@ -32,8 +32,9 @@ class HomeController: UIViewController {
     
     private func setupViewModel() {
         viewModel = HomeViewModel()
-        viewModel.getListPost()
+        
         showLoadingView(state: true)
+        viewModel.getListPost()
         viewModel.showLoading = { isLoading in
             self.showLoadingView(state: isLoading)
         }
