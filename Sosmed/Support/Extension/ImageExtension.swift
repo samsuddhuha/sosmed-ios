@@ -11,6 +11,8 @@ import UIKit
 extension UIImageView {
     func downloaded(from url: URL, contentMode mode: ContentMode = .scaleAspectFit) {
         contentMode = mode
+        var request = URLRequest(url: url)
+        request.setValue("my-secret-key", forHTTPHeaderField: "X-Mashape-Key")
         URLSession.shared.dataTask(with: url) { data, response, error in
             guard
                 let httpURLResponse = response as? HTTPURLResponse, httpURLResponse.statusCode == 200,
